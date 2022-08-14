@@ -1,0 +1,35 @@
+:host() {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 60vw;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+  }
+  
+  td, th {
+    text-align: left;
+    padding: 14px 24px 13px;
+    font-size: 14px;
+    color: #666666;
+  }
+  
+  tr:nth-child(even){
+    background-color: #f7f7f7;
+  }
+
+  thead>tr {
+    background-color: #f7f7f7;
+    cursor: pointer;
+  }
+
+  tbody>tr:hover{
+    background-color: #f0f6ff;
+  }

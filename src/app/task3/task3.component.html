@@ -1,0 +1,25 @@
+<table>
+  <thead>
+    <tr>
+      <th (click)="sort('name')">
+        Product Name
+        <sort-widget [sortState]="sortCollection.name"></sort-widget>
+      </th>
+      <th (click)="sort('price')">
+        Price
+        <sort-widget [sortState]="sortCollection.price"></sort-widget>
+      </th>
+      <th (click)="sort('category')">
+        Category
+        <sort-widget [sortState]="sortCollection.category"></sort-widget>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of listOfTableData">
+      <td>{{ data?.name }}</td>
+      <td>{{ data?.price }}</td>
+      <td>{{ data?.category }}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,24 @@
+.table-column-sorter{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.table-column-sorter-inner{
+    height: 1em;
+    margin-top: 0.35em;
+    margin-left: 0.57142857em;
+    color: #bfbfbf;
+    line-height: 1em;
+    text-align: center;
+    transition: all .3s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.table-column-sorter-inner i{
+    font-size: 12px;
+    height: 0.5em;
+}
+.sorter-active{
+    color: #0063e6;
+}

@@ -1,0 +1,16 @@
+<section>
+  <h1>Epsilon UX Front-End Developer Challenge Solution</h1>
+  Assignment Link:
+  <a
+    href="https://conversant.invisionapp.com/share/BF10FF619CUV#/screens/446862016"
+  >
+    https://conversant.invisionapp.com/share/BF10FF619CUV#/screens/446862016
+  </a>
+  <div class="solution-wrapper">
+    <ng-container *ngFor="let item of solutionData; let i = index">
+      <div class="solution-card" [routerLink]="item?.slug">
+        Part {{ i + 1 }} - {{ item?.label }}
+      </div>
+    </ng-container>
+  </div>
+</section>
